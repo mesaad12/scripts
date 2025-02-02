@@ -223,7 +223,7 @@ $OneDriveFolder = Get-ItemPropertyValue -Path 'HKCU:\Software\Microsoft\OneDrive
 # Redirect select folders
 If (Test-Path $OneDriveFolder) {
     
-    Redirect-Folder -SyncFolder $SyncFolder -GetFolder 'Favorites' -SetFolder 'Favorites' -Target 'Favorites'
-	Redirect-Folder -SyncFolder $SyncFolder -GetFolder 'Videos' -SetFolder 'Videos' -Target 'Videos'
+Redirect-Folder -SyncFolder $SyncFolder -GetFolder 'Favorites' -SetFolder 'Favorites' -Target 'Favorites'
+Redirect-Folder -SyncFolder $SyncFolder -GetFolder 'Videos' -SetFolder 'Videos' -Target 'Videos'
 	
 }
